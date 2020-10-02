@@ -8,7 +8,8 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v4.0.1">
 
-  <title>Album example · Bootstrap</title>
+  <title>Isaac Plotkin</title>
+  <link rel="icon" href="{% static 'IP.png' %}">
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
@@ -44,6 +45,33 @@
         font-size: 3.5rem;
       }
     }
+
+    .jumbotron {
+      /* padding-top: 3rem;
+      padding-bottom: 3rem; */
+      /* background-image: url("https://cdn.pixabay.com/photo/2017/07/29/01/13/santa-cruz-2550401_1280.jpg"); */
+      background: url("../static/cool_animation.gif") no-repeat fixed center;
+      /* background-repeat: no-repeat; */
+      /* background-position: center; */
+      background-size: 100% 100%;
+      margin: 0;
+      padding: 100px 0 100px 0; /*top, right, bottom, left */
+    }
+
+    .album {
+      /* padding-top: 3rem;
+      padding-bottom: 3rem; */
+      background: url("../static/dark-paths.png") no-repeat fixed center;
+      /* background-repeat: no-repeat; */
+      /* background-position: center; */
+      background-size: 100% 100%;
+      /* margin-bottom: 0;
+      background-color: #fff; */
+    }
+    .bg-dark{
+      background-color: #005968!important;
+    }
+
   </style>
 
   <link rel="stylesheet" href="https://use.typekit.net/wjw2aue.css">
@@ -53,16 +81,16 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Isaac Plotkin</a>
+      <a class="navbar-brand" href="{% url 'home' %}">Isaac Plotkin</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active" href="#">Home</a>
-          <a class="nav-item nav-link" href="#">Blog</a>
-          <a class="nav-item nav-link" href="#">LinkedIn</a>
-          <a class="nav-item nav-link" href="#">GitHub</a>
+          <!-- <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a> -->
+          <a class="nav-item nav-link" href="{% static 'IsaacPlotkin_resume.pdf' %}">Resume</a>
+          <a class="nav-item nav-link" href="http://linkedin.com/in/isaac-plotkin-194830194">LinkedIn</a>
+          <!-- <a class="nav-item nav-link" href="#">GitHub</a> -->
         </div>
         <!-- Email button is moved to right allign -->
         <div class="navbar-nav ml-auto">
@@ -77,10 +105,11 @@
     <section class="jumbotron text-center">
       <div class="container">
         <h1>Hi, I'm Isaac</h1>
-        <p class="lead text-muted">My name is Isaac Plotkin, I am a third year student at the University of California, Santa Cruz, pursuing a bachelor's degree in Computer Science.</p>
-        <p>
-          <a href="mailto:isaac.plotkin123@gmail.com" class="btn btn-primary my-2">EMAIL</a>
+        <p class="lead text-muted">My name is Isaac Plotkin, I am a third year student at the University of California, Santa Cruz, pursuing a bachelor's degree in
+        Computer Science with a minor in statistics. I am interested in working on innovative projects and artificial intelligence. I also enjoy game development,
+         surfing, sports, and the stock market.
         </p>
+        <img src="{% static 'isaac3.JPG' %}" height="350" />
       </div>
     </section>
 
@@ -115,9 +144,10 @@
 
   </main>
 
-  <footer class="text-muted">
+  <footer class="text-center">
     <div class="container text-center">
       <p>© Isaac Plotkin {% now "Y" %} <br />
+      <a rel="nofollow" href="http://videezy.com">Stock videos by Videezy</a> <br />
       <a href="#">Back to top</a>
       </p>
     </div>

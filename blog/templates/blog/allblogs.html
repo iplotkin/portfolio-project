@@ -8,7 +8,8 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Jekyll v4.0.1">
 
-  <title>Album example · Bootstrap</title>
+  <title>Isaac's Blog</title>
+  <link rel="icon" href="{% static 'IP.png' %}">
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
 
@@ -53,15 +54,15 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Isaac Plotkin</a>
+      <a class="navbar-brand" href="{% url 'home' %}">Isaac Plotkin</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home</a>
-          <a class="nav-item nav-link active" href="#">Blog</a>
-          <a class="nav-item nav-link" href="#">LinkedIn</a>
+          <a class="nav-item nav-link active" href="{% url 'allblogs' %}">Blog</a>
+          <a class="nav-item nav-link" href="{% static 'IsaacPlotkin_resume.pdf' %}">Resume</a>
+          <a class="nav-item nav-link" href="http://linkedin.com/in/isaac-plotkin-194830194">LinkedIn</a>
           <a class="nav-item nav-link" href="#">GitHub</a>
         </div>
         <!-- Email button is moved to right allign -->

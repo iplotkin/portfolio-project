@@ -6,6 +6,7 @@
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
+    background-color:
 }
 
 .nav-link {
@@ -18,11 +19,33 @@
     padding-left: 1.5rem;
 }
 
+/* .jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+@media (min-width: 768px){
+  .jumbotron {
+      background-image: url(dark-paths.png);
+      background-color: none;
+      background-position: center;
+      background-size: cover;
+  }
+} */
+
+.text-muted {
+    color: #f1f1f1!important;
+    font-size: 1.5rem;
+}
+
 h1 {
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     font-style: bold;
-    font-size: 4.0rem;
+    font-size: 5.0rem;
+    color: #ffffff!important;
 }
 
 h2 {
@@ -43,4 +66,5 @@ body {
     font-family: 'Exo 2', sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 1.05rem
 }

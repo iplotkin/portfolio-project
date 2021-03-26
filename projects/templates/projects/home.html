@@ -142,7 +142,7 @@
 
         <div class="row">
 
-          {% for project in projects.all %}
+          {% for project in projects.all reversed %}
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <img class="card-img-top" src="{{ project.image.url }}"  />

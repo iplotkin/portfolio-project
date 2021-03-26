@@ -1,0 +1,5 @@
+
+SECRET_KEY = 'ok#8x$1^)0@!*c^lbl(c^zss7zzngx=euh+=83swtoocf*$hr0'
+
+ALLOWED_HOSTS = ['198.211
+
